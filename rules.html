@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>YEGIX: Edmonton Internet Exchange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 800px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 20px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.ico">
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="mission.html">Mission</a></li>
+          <li><a href="status.html">Status</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="links.html">Links</a></li>
+        </ul>
+        <h3 class="muted">YEGIX</h3>
+        <hr>
+      </div>
+
+      <div class="marketing">
+
+<center><h4>
+                  YEGIX Internet Exchange Community Ltd.
+<br>
+                       Exchange Participation Rules 
+<br>
+                    Version 1 &mdash; January 1, 2015
+</h4></center>
+<br>
+
+<p>
+The goal of YEGIX Internet Exchange Community Ltd. (YEGIX) is to make
+an exchange which works well for all participants.  The following policy
+has been developed to produce that result.</p>
+
+<h4>General</h4>
+
+<p>
+1) Participants must ensure that their usage of the Internet Exchange
+is not detrimental to the usage of other Internet Exchange
+participants.</p>
+
+<p>
+2) Participants must ensure that their usage is in compliance with
+applicable Internet standards and Internet exchange standards as
+published by the IETF. YEGIX reserves the right to specify which
+standards are applicable.</p>
+
+<p>
+3) Participants must not use the Internet Exchange for carrying
+traffic between their own routers.</p>
+
+<p>
+4) Traffic may only be forwarded from one Internet Exchange
+participant to another if permission is given by the recipient. There
+is no Multilateral Peering (MLPA).</p>
+
+<h4>Connectivity</h4>
+
+<p>
+1) The YEGIX Internet Exchange provides connectivity to its
+infrastructure using switched, shared Ethernet LANs. All physical
+interfaces connected to the YEGIX Internet Exchange infrastructure
+must be explicitly configured with duplex and speed settings, and must
+not be configured to use Ethernet auto-negotiation.</p>
+
+<p>
+2) YEGIX reserves the right to charge port fees on a per-connection
+basis to ensure the exchange infrastructure can be maintained.</p>
+
+<p>
+3) YEGIX reserves the right to disconnect any port which violates any
+provision of this agreement without notice.</p>
+
+<h4>Routing Policy</h4>
+
+<p>
+1) Each Participant must have their own Autonomous System number (AS).</p>
+
+<p>
+2) Unicast peering between participants' routers across YEGIX Internet
+Exchange will be via BGP (version 4) and peers must set NEXT_HOP_SELF
+if advertising routes from other participants.</p>
+
+<p>
+3)  Participants shall not generate unnecessary route flap, or
+advertise unnecessarily specific routes in peering sessions with
+participants across the YEGIX Internet Exchange.</p>
+
+<p>
+4) Participants may not use another participant's resources without
+permission.</p>
+
+<p>
+5) Broadcast and multicast traffic may be not delivered to the
+exchange, except as needed for normal operation.</p>
+
+<p>
+6) Participants will peer with the Route Viewer or other designated
+YEGIX collection device (the viewer will not advertise any routes, and
+the routes received will only be used for data collection, reporting
+and monitoring).</p>
+
+<p>
+7) Participants may only utilize a single layer-2 MAC address to place
+a single layer-3 router per port allocated from the switch fabric
+unless by prior agreement.</p>
+
+<h4>Physical</h4>
+
+<p>
+1) Participants have a duty of confidentiality to the YEGIX Internet
+Exchange and other YEGIX Internet Exchange participants. In
+particular, Participants must not install packet sniffers to monitor
+traffic passing through the YEGIX Internet Exchange.</p>
+
+<p>
+2) Participants may not connect equipment to or otherwise provide
+connectivity to the YEGIX Internet Exchange switch infrastructure on
+behalf of non-participants.</p>
+
+<h4>Legal</h4>
+
+<p>
+1) Participants must not carry out any illegal activities through the
+exchange. All traffic transiting the exchange is subject to Canadian
+Law.</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
